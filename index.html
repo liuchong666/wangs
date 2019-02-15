@@ -16,6 +16,8 @@
     <script src="content/js/bxslider.min.js"></script>
     <script src="content/js/common.js"></script>
     <script src="content/js/bootstrap.js"></script>
+    
+
     <!--[if lt IE 9]>
 	  <script src="../../cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js" tppabs="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="../../cdn.bootcss.com/respond.js/1.4.2/respond.min.js" tppabs="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -24,6 +26,7 @@
 
 <body>
     <header>
+        <!--顶部-->
         <div class="top_bg">
             <div class="container">
                 <div class="col-xs-12 col-sm-9 col-md-9">
@@ -34,8 +37,8 @@
                         <div class="input-group search_group">
                             <input type="text" name="key" class="form-control input-sm" placeholder="产品搜索">
                             <span class="input-group-btn">
-                                <span id="search_submit" onclick="searchform.submit();" title="产品搜索" class="glyphicon glyphicon-search btn-lg"
-                                    aria-hidden="true"></span>
+                                <span id="search_submit" onclick="searchform.submit();" title="产品搜索"
+                                    class="glyphicon glyphicon-search btn-lg" aria-hidden="true"></span>
                             </span>
                         </div>
                     </form>
@@ -43,21 +46,311 @@
             </div>
         </div>
 
+        <!--banner-->
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-9 col-md-9">
-                    <a href="#"><img src="content/image/logo.png" class="logo"/></a>
+                    <a href="#"><img src="content/images/logo.png" class="logo" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-3 col-md-3 tel_box">
                     <div class="top_tel">
-                        <img src="content/image/tel.png" alt="服务热线">
+                        <img src="content/images/tel.png" alt="服务热线">
                         <span>全国服务热线：</span>
-                        <p>+8613699285614</p>
+                        <p>136-9928-5614</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--菜单-->
+        <nav id="top_nav" class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">导航菜单</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span id="search_btn" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <a class="navbar-brand" href="#">导航菜单</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="index.htm">首 页</a></li>
+
+                        <li><a href="page/html/about.htm">关于我们</a></li>
+
+                        <li><a href="product/class/index.htm">产品展示</a></li>
+
+                        <li><a href="news/class/index.htm">新闻资讯</a></li>
+
+                        <li><a href="down/class/index.htm">下载中心</a></li>
+
+                        <li><a href="photo/class/-8.html">企业相册</a></li>
+
+                        <li><a href="page/html/feedback.php.htm">留言反馈</a></li>
+
+                        <li><a href="page/html/contact.php.htm">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+
+    <!---轮播图-->
+    <div class="flash">
+        <ul class="bxslider">
+            <li><img src="images/1546584515.jpg" />></li>
+            <li><img src="images/1546584523.jpg" /></li>
+            <li><img src="images/1546584534.jpg" /></a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        $('.bxslider').bxSlider({
+            adaptiveHeight: true,
+            infiniteLoop: true,
+            hideControlOnEnd: true,
+            auto: true
+        });
+    </script>
+
+    <!--内容导航-->
+    <div class="advantage" style="background-image: url();">
+
+        <div class="container advantage_list">
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                    <div class="col-sm-3 col-md-3">
+                        <a href="index.htm" target="_self">
+                            <img src="content/images/1546586598.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-9">
+                        <h4>新品推荐</h4>
+                        <p>NEW PRODUCTS</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                    <div class="col-sm-3 col-md-3">
+                        <a href="photo/class/-9.html" target="_self">
+                            <img src="content/images/1546586626.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-9">
+                        <h4>资质荣誉</h4>
+                        <p>QUALIFICATION HONOR</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                    <div class="col-sm-3 col-md-3">
+                        <a href="photo/class/-8.html" target="_self">
+                            <img src="content/images/1546586656.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-9">
+                        <h4>案例集锦</h4>
+                        <p>CASES</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                    <div class="col-sm-3 col-md-3">
+                        <a href="page/html/contact.php.htm" target="_self">
+                            <img src="content/images/1546586727.jpg">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-9">
+                        <h4>联系我们</h4>
+                        <p>CONTACT US</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--左侧产品导航-->
+    <div class="container">
+        <div class="row">
+            <!--div class="product_head" data-move-y="-40px">
+                        <h2>质量保证 · 产品直通车</h2>
+                        <span></span>
+                        <p>品类齐全，您想要的好产品都在这里</p>
+                  </div-->
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="left_nav" data-move-y="-30px">
+                    <p>CATALOGUE</p>
+                    <h3>产品目录</h3>
+                    <div class="left_nav_bg">
+                        <ul class="left_nav_ul" id="firstpane">
+                            <li><a class="biglink" href="product/class/-115.html">产品分类一</a></li>
+                            <ul class="left_snav_ul menu_body">
+                                <li><a href="product/class/-126.html" target="_self">产品分类a</a></li>
+                                <li><a href="product/class/-127.html" target="_self">产品分类b</a></li>
+                                <li><a href="product/class/-128.html" target="_self">产品分类c</a></li>
+                            </ul>
+
+                            <li><a class="biglink" href="product/class/-74.html">产品分类二</a></li>
+
+                            <ul class="left_snav_ul menu_body"></ul>
+
+                            <li><a class="biglink" href="product/class/-124.html">产品分类三</a></li>
+                            <li><a class="biglink" href="product/class/-124.html">产品分类三</a></li>
+
+                            <ul class="left_snav_ul menu_body"></ul>
+
+                        </ul>
+
+                        <div class="left_nav_tel">020-22043297</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9">
+                <div class="product_list">
+
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-136.html" tppabs="http://demo.weboss.hk/h127/product/html/?136.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-136.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?136.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-135.html" tppabs="http://demo.weboss.hk/h127/product/html/?135.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-135.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?135.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-134.html" tppabs="http://demo.weboss.hk/h127/product/html/?134.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-134.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?134.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-133.html" tppabs="http://demo.weboss.hk/h127/product/html/?133.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-133.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?133.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-132.html" tppabs="http://demo.weboss.hk/h127/product/html/?132.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-132.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?132.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-131.html" tppabs="http://demo.weboss.hk/h127/product/html/?131.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-131.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?131.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-130.html" tppabs="http://demo.weboss.hk/h127/product/html/?130.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-130.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?130.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-129.html" tppabs="http://demo.weboss.hk/h127/product/html/?129.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-129.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?129.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-128.html" tppabs="http://demo.weboss.hk/h127/product/html/?128.html">
+                            <img src="images/1524572061.png" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-128.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?128.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="case_bg"
+        style="background-image: url(content/images/1546589213.jpg); background-size: cover;background-attachment: fixed;background-color: #1A1A1A;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="case_head" data-move-y="-40px">
+                        <h2>应用领域</h2>
+                        <span></span>
+                        <p>APPLICATION AREAS</p>
+                    </div>
+                    <div class="case_list">
+
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-70.html"><img src="images/20190104161450_29561.jpg"/></a>
+                            <p class="case_title"><a href="photo/html/-70.html" >温泉功能池</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-69.html"><img src="images/20190104161450_96305.jpg"/></a>
+                            <p class="case_title"><a href="photo/html/-69.html">商业泳池</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-68.html"><img src="images/20190104161450_49006.jpg"/></a>
+                            <p class="case_title"><a href="photo/html/-68.html">海洋馆</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-67.html"><img src="images/20190104161450_59470.jpg"/></a>
+                            <p class="case_title"><a href="photo/html/-67.html">别墅泳池</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-66.html"><img src="images/20190104161450_27678.jpg"/></a>
+                            <p class="case_title"><a href="photo/html/-66.html">比赛标准泳池</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-65.html"><img src="images/20190104161450_49760.jpg"/></a>
+                            <p class="case_title"><a href="photo/html/-65.html">SPA水疗池</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="content/js/jquery.smoove.min.js"></script>
+    <script>$('.product_head,.product_img,.left_nav,.case_head,.case_img,.advantage_head,.advantage_right,.advantage_left,.news_head,.news_ul,.answer_ul,.about_head,.js_about_left,.js_about_right,.cooperation_head,.cooperation_img').smoove({ offset: '10%' });</script>
 </body>
 
 </html>

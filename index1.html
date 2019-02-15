@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset=utf-8"utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页-企业通用HTML5响应式模版网站</title>
+    <meta name="keywords" content="keywords" />
+    <meta name="description" content="memomemomemomemomemo" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <link href="content/css/bootstrap.css" rel="stylesheet" />
+    <link href="content/css/bxslider.css" rel="stylesheet" />
+    <link href="content/css/style.css" rel="stylesheet" />
+    <script src="content/js/jquery.min.js"></script>
+    <script src="content/js/bxslider.min.js"></script>
+    <script src="content/js/common.js"></script>
+    <script src="content/js/bootstrap.js"></script>
+    <script type="text/javascript" src="content/js/online.js"
+        tppabs="http://demo.weboss.hk/h127/Public/js/online.js"></script>
+    <!--[if lt IE 9]>
+	  <script src="../../cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js" tppabs="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="../../cdn.bootcss.com/respond.js/1.4.2/respond.min.js" tppabs="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <header>
+        <div class="top_bg">
+            <div class="container">
+                <div class="col-xs-12 col-sm-9 col-md-9">
+                    <span class="top_welcome">欢迎光临~PHPWEB企业网站管理系统</span>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <form id="searchform" method="get" action="http://demo.weboss.hk/h127/product/class/index.php">
+                        <div class="input-group search_group">
+                            <input type="text" name="key" class="form-control input-sm" placeholder="产品搜索">
+                            <span class="input-group-btn">
+                                <span id="search_submit" onclick="searchform.submit();" title="产品搜索"
+                                    class="glyphicon glyphicon-search btn-lg" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9">
+
+                    <a href="#"><img src="advs/pics/20190104/1546600790.png"
+                            tppabs="http://demo.weboss.hk/h127/advs/pics/20190104/1546600790.png" class="logo"
+                            alt="企业通用模版网站" /></a>
+
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 tel_box">
+                    <div class="top_tel">
+                        <img src="Home/Tpl/default/Public/images/tel.png"
+                            tppabs="http://demo.weboss.hk/h127/Home/Tpl/default/Public/images/tel.png" alt="服务热线">
+                        <span>全国服务热线：</span>
+                        <p>020-22043297</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed navbar -->
+        <nav id="top_nav" class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">导航菜单</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span id="search_btn" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <a class="navbar-brand" href="#">导航菜单</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="index.php.htm" tppabs="http://demo.weboss.hk/h127/index.php">首 页</a>
+
+                        </li>
+
+                        <li><a href="page/html/about.php.htm"
+                                tppabs="http://demo.weboss.hk/h127/page/html/about.php">关于我们</a>
+
+                        </li>
+
+                        <li class="dropdown"><a href="product/class/index.htm"
+                                tppabs="http://demo.weboss.hk/h127/product/class/">产品展示</a>
+                            <a href="product/class/index.htm" tppabs="http://demo.weboss.hk/h127/product/class/"
+                                id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                            <ul class='dropdown-menu nav_small' role='menu'>
+
+                                <li><a href="product/class/-115.html"
+                                        tppabs="http://demo.weboss.hk/h127/product/class/?115.html">产品分类一</a></li>
+
+                                <li><a href="product/class/-74.html"
+                                        tppabs="http://demo.weboss.hk/h127/product/class/?74.html">产品分类二</a></li>
+
+                                <li><a href="product/class/-124.html"
+                                        tppabs="http://demo.weboss.hk/h127/product/class/?124.html">产品分类三</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="dropdown"><a href="news/class/index.htm"
+                                tppabs="http://demo.weboss.hk/h127/news/class/">新闻资讯</a>
+                            <a href="news/class/index.htm" tppabs="http://demo.weboss.hk/h127/news/class/"
+                                id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                            <ul class='dropdown-menu nav_small' role='menu'>
+
+                                <li><a href="news/class/-86.html"
+                                        tppabs="http://demo.weboss.hk/h127/news/class/?86.html">公司新闻</a></li>
+
+                                <li><a href="news/class/-99.html"
+                                        tppabs="http://demo.weboss.hk/h127/news/class/?99.html">行业新闻</a></li>
+
+                                <li><a href="news/class/-106.html"
+                                        tppabs="http://demo.weboss.hk/h127/news/class/?106.html">科技新闻</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li><a href="down/class/index.htm" tppabs="http://demo.weboss.hk/h127/down/class/">下载中心</a>
+
+                        </li>
+
+                        <li><a href="photo/class/-8.html"
+                                tppabs="http://demo.weboss.hk/h127/photo/class/?8.html">企业相册</a>
+
+                        </li>
+
+                        <li><a href="page/html/feedback.php.htm"
+                                tppabs="http://demo.weboss.hk/h127/page/html/feedback.php">留言反馈</a>
+
+                        </li>
+
+                        <li><a href="page/html/contact.php.htm"
+                                tppabs="http://demo.weboss.hk/h127/page/html/contact.php">联系我们</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- bxslider -->
+    <div class="flash">
+        <ul class="bxslider">
+
+
+            <li><a href="javascript:if(confirm('http:///  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http:///'"
+                    tppabs="http:///"><img src="advs/pics/20190104/1546584515.jpg"
+                        tppabs="http://demo.weboss.hk/h127/advs/pics/20190104/1546584515.jpg" alt="广告标题" /></a></li>
+
+
+            <li><a href="javascript:if(confirm('http:///  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http:///'"
+                    tppabs="http:///"><img src="advs/pics/20190104/1546584523.jpg"
+                        tppabs="http://demo.weboss.hk/h127/advs/pics/20190104/1546584523.jpg" alt="广告标题" /></a></li>
+
+
+            <li><a href="javascript:if(confirm('http:///  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http:///'"
+                    tppabs="http:///"><img src="advs/pics/20190104/1546584534.jpg"
+                        tppabs="http://demo.weboss.hk/h127/advs/pics/20190104/1546584534.jpg" alt="广告标题" /></a></li>
+
+        </ul>
+    </div>
+    <script type="text/javascript">
+        $('.bxslider').bxSlider({
+            adaptiveHeight: true,
+            infiniteLoop: false,
+            hideControlOnEnd: true,
+            auto: true
+        });
+    </script>
+
+    <div class="advantage" style="background-image: url();">
+
+        <div class="container advantage_list">
+            <div class="row">
+
+
+                <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                    <div class="col-sm-3 col-md-3">
+                        <a href="product/class/index.htm" tppabs="http://demo.weboss.hk/h127/product/class/"
+                            target="_self">
+                            <img src="page/pics/20190104/1546586598.jpg"
+                                tppabs="http://demo.weboss.hk/h127/page/pics/20190104/1546586598.jpg" alt="新品推荐">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-9">
+                        <h4>新品推荐</h4>
+                        <p>NEW PRODUCTS</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                    <div class="col-sm-3 col-md-3">
+                        <a href="photo/class/-9.html" tppabs="http://demo.weboss.hk/h127/photo/class/?9.html"
+                            target="_self">
+                            <img src="page/pics/20190104/1546586626.jpg"
+                                tppabs="http://demo.weboss.hk/h127/page/pics/20190104/1546586626.jpg" alt="资质荣誉">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-9">
+                        <h4>资质荣誉</h4>
+                        <p>QUALIFICATION HONOR</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                    <div class="col-sm-3 col-md-3">
+                        <a href="photo/class/-8.html" tppabs="http://demo.weboss.hk/h127/photo/class/?8.html"
+                            target="_self">
+                            <img src="page/pics/20190104/1546586656.jpg"
+                                tppabs="http://demo.weboss.hk/h127/page/pics/20190104/1546586656.jpg" alt="案例集锦">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-9">
+                        <h4>案例集锦</h4>
+                        <p>CASES</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                    <div class="col-sm-3 col-md-3">
+                        <a href="page/html/contact.php.htm" tppabs="http://demo.weboss.hk/h127/page/html/contact.php"
+                            target="_self">
+                            <img src="page/pics/20190104/1546586727.jpg"
+                                tppabs="http://demo.weboss.hk/h127/page/pics/20190104/1546586727.jpg" alt="联系我们">
+                        </a>
+                    </div>
+                    <div class="col-sm-9 col-md-9">
+                        <h4>联系我们</h4>
+                        <p>CONTACT US</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <!--div class="product_head" data-move-y="-40px">
+                        <h2>质量保证 · 产品直通车</h2>
+                        <span></span>
+                        <p>品类齐全，您想要的好产品都在这里</p>
+                  </div-->
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="left_nav" data-move-y="-30px">
+                    <p>CATALOGUE</p>
+                    <h3>产品目录</h3>
+                    <div class="left_nav_bg">
+
+                        <ul class="left_nav_ul" id="firstpane">
+
+                            <li><a class="biglink" href="product/class/-115.html"
+                                    tppabs="http://demo.weboss.hk/h127/product/class/?115.html">产品分类一</a>
+                                <!--span class="menu_head">+</span-->
+                            </li>
+                            <ul class="left_snav_ul menu_body">
+
+                                <li><a href="product/class/-126.html"
+                                        tppabs="http://demo.weboss.hk/h127/product/class/?126.html"
+                                        target="_self">产品分类a</a></li>
+
+                                <li><a href="product/class/-127.html"
+                                        tppabs="http://demo.weboss.hk/h127/product/class/?127.html"
+                                        target="_self">产品分类b</a></li>
+
+                                <li><a href="product/class/-128.html"
+                                        tppabs="http://demo.weboss.hk/h127/product/class/?128.html"
+                                        target="_self">产品分类c</a></li>
+
+                            </ul>
+
+                            <li><a class="biglink" href="product/class/-74.html"
+                                    tppabs="http://demo.weboss.hk/h127/product/class/?74.html">产品分类二</a>
+                                <!--span class="menu_head">+</span-->
+                            </li>
+                            <ul class="left_snav_ul menu_body">
+
+                            </ul>
+
+                            <li><a class="biglink" href="product/class/-124.html"
+                                    tppabs="http://demo.weboss.hk/h127/product/class/?124.html">产品分类三</a>
+                                <!--span class="menu_head">+</span-->
+                            </li>
+                            <ul class="left_snav_ul menu_body">
+
+                            </ul>
+
+                        </ul>
+
+                        <div class="left_nav_tel">020-22043297</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9">
+                <div class="product_list">
+
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-136.html" tppabs="http://demo.weboss.hk/h127/product/html/?136.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-136.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?136.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-135.html" tppabs="http://demo.weboss.hk/h127/product/html/?135.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-135.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?135.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-134.html" tppabs="http://demo.weboss.hk/h127/product/html/?134.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-134.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?134.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-133.html" tppabs="http://demo.weboss.hk/h127/product/html/?133.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-133.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?133.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-132.html" tppabs="http://demo.weboss.hk/h127/product/html/?132.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-132.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?132.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-131.html" tppabs="http://demo.weboss.hk/h127/product/html/?131.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-131.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?131.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-130.html" tppabs="http://demo.weboss.hk/h127/product/html/?130.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-130.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?130.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-129.html" tppabs="http://demo.weboss.hk/h127/product/html/?129.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-129.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?129.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="product/html/-128.html" tppabs="http://demo.weboss.hk/h127/product/html/?128.html">
+                            <img src="product/pics/20180424/1524572061.png"
+                                tppabs="http://demo.weboss.hk/h127/product/pics/20180424/1524572061.png"
+                                class="opacity_img" alt="产品名称">
+                        </a>
+                        <p class="product_title"><a href="product/html/-128.html"
+                                tppabs="http://demo.weboss.hk/h127/product/html/?128.html" title="产品名称">产品名称</a></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="case_bg"
+        style="background-image: url(advs/pics/20190104/1546589213.jpg); background-size: cover;background-attachment: fixed;background-color: #1A1A1A;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="case_head" data-move-y="-40px">
+                        <h2>应用领域</h2>
+                        <span></span>
+                        <p>APPLICATION AREAS</p>
+                    </div>
+                    <div class="case_list">
+
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-70.html" tppabs="http://demo.weboss.hk/h127/photo/html/?70.html"><img
+                                    src="kindeditor/attached/image/20190104/20190104161450_29561.jpg"
+                                    tppabs="http://demo.weboss.hk/h127/kindeditor/attached/image/20190104/20190104161450_29561.jpg"
+                                    class="product_img" alt="温泉功能池" /></a>
+                            <p class="case_title"><a href="photo/html/-70.html"
+                                    tppabs="http://demo.weboss.hk/h127/photo/html/?70.html">温泉功能池</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-69.html" tppabs="http://demo.weboss.hk/h127/photo/html/?69.html"><img
+                                    src="kindeditor/attached/image/20190104/20190104161450_96305.jpg"
+                                    tppabs="http://demo.weboss.hk/h127/kindeditor/attached/image/20190104/20190104161450_96305.jpg"
+                                    class="product_img" alt="商业泳池" /></a>
+                            <p class="case_title"><a href="photo/html/-69.html"
+                                    tppabs="http://demo.weboss.hk/h127/photo/html/?69.html">商业泳池</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-68.html" tppabs="http://demo.weboss.hk/h127/photo/html/?68.html"><img
+                                    src="kindeditor/attached/image/20190104/20190104161450_49006.jpg"
+                                    tppabs="http://demo.weboss.hk/h127/kindeditor/attached/image/20190104/20190104161450_49006.jpg"
+                                    class="product_img" alt="海洋馆" /></a>
+                            <p class="case_title"><a href="photo/html/-68.html"
+                                    tppabs="http://demo.weboss.hk/h127/photo/html/?68.html">海洋馆</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-67.html" tppabs="http://demo.weboss.hk/h127/photo/html/?67.html"><img
+                                    src="kindeditor/attached/image/20190104/20190104161450_59470.jpg"
+                                    tppabs="http://demo.weboss.hk/h127/kindeditor/attached/image/20190104/20190104161450_59470.jpg"
+                                    class="product_img" alt="别墅泳池" /></a>
+                            <p class="case_title"><a href="photo/html/-67.html"
+                                    tppabs="http://demo.weboss.hk/h127/photo/html/?67.html">别墅泳池</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-66.html" tppabs="http://demo.weboss.hk/h127/photo/html/?66.html"><img
+                                    src="kindeditor/attached/image/20190104/20190104161450_27678.jpg"
+                                    tppabs="http://demo.weboss.hk/h127/kindeditor/attached/image/20190104/20190104161450_27678.jpg"
+                                    class="product_img" alt="比赛标准泳池" /></a>
+                            <p class="case_title"><a href="photo/html/-66.html"
+                                    tppabs="http://demo.weboss.hk/h127/photo/html/?66.html">比赛标准泳池</a></p>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                            <a href="photo/html/-65.html" tppabs="http://demo.weboss.hk/h127/photo/html/?65.html"><img
+                                    src="kindeditor/attached/image/20190104/20190104161450_49760.jpg"
+                                    tppabs="http://demo.weboss.hk/h127/kindeditor/attached/image/20190104/20190104161450_49760.jpg"
+                                    class="product_img" alt="SPA水疗池" /></a>
+                            <p class="case_title"><a href="photo/html/-65.html"
+                                    tppabs="http://demo.weboss.hk/h127/photo/html/?65.html">SPA水疗池</a></p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="about_head" data-move-y="-40px">
+                    <h2>关于我们</h2>
+                    <span></span>
+                    <p>一站式整体方案服务商</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 js_about_left" data-move-y="-40px">
+                    <!--h3 class="about_h3">ABOUT US</h3>
+                              <p class="about_p">企业通用HTML5响应式模版网站</p-->
+                    <div class="about_content">
+                        PHPWEB企业建站系统是采用PHP+MYSQL技术进行开发的，架构清晰，代码易于维护。支持伪静态功能，可生成google和百度地图，支持自定义url、关键字和描述，符合SEO标准。拥有企业网站常用的模块功能(企业简介模块、新闻模块、产品模块、下载模块、图片模块、在线留言、在线订单、友情链接、网站地图等)，强大灵活的后台管理功能，可为企业打造出专业且具有营销力的标准网站，PHPWEB企业建站系统是采用PHP+MYSQL技术进行开发的，架构清晰，代码易于维护。支持伪静态功能，可生成google和百度地图，支持自定义url、关键字和描述，符合SEO标准。拥有企业网站常用的模块功能(企业简介模块、新闻模块、产品模块、下载模块、图片模块、在线留言、在线订单站。。。
+                    </div>
+                    <a href="page/html/about.php.htm" tppabs="http://demo.weboss.hk/h127/page/html/about.php"
+                        class="about_btn">了解更多</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 js_about_right" data-move-y="40px">
+                    <div class="about_video">
+                        <img src="advs/pics/20190104/1546590124.jpg"
+                            tppabs="http://demo.weboss.hk/h127/advs/pics/20190104/1546590124.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="news_bg">
+        <div class="container">
+            <div class="row">
+                <div class="news_head" data-move-y="-40px">
+                    <h2>新闻资讯</h2>
+                    <span></span>
+                    <p>连线行业前沿资讯</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="col-sm-12 col-md-5 news_img" data-move-x="-100px"
+                        style="background-image: url(advs/pics/20190104/1546598176.jpg);">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7  news_text" data-move-y="150px">
+                        <ul class="news_index">
+
+                            <li>
+                                <span>
+                                    <strong>25</strong>
+                                    <i>2010-01</i>
+                                </span>
+                                <a href="news/html/-431.html" tppabs="http://demo.weboss.hk/h127/news/html/?431.html"
+                                    title="如何解决光扩散PC注塑成型拉丝问题？">如何解决光扩散PC注塑成型拉丝问题？</a><br>
+                                <em>如何解决光扩散PC注塑成型拉丝问题？</em>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <strong>25</strong>
+                                    <i>2010-01</i>
+                                </span>
+                                <a href="news/html/-430.html" tppabs="http://demo.weboss.hk/h127/news/html/?430.html"
+                                    title="充电器外壳阻燃防火PC 充电器外壳阻燃防火PC注塑飞边的原因及解决方">充电器外壳阻燃防火PC
+                                    充电器外壳阻燃防火PC注塑飞边的原因及解决方</a><br>
+                                <em>充电器外壳阻燃防火PC 充电器外壳阻燃防火PC注塑飞边的原因及解决方</em>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <strong>25</strong>
+                                    <i>2010-01</i>
+                                </span>
+                                <a href="news/html/-429.html" tppabs="http://demo.weboss.hk/h127/news/html/?429.html"
+                                    title="如何解决导电PC注塑件熔接痕问题？">如何解决导电PC注塑件熔接痕问题？</a><br>
+                                <em>如何解决导电PC注塑件熔接痕问题？</em>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <strong>25</strong>
+                                    <i>2010-01</i>
+                                </span>
+                                <a href="news/html/-428.html" tppabs="http://demo.weboss.hk/h127/news/html/?428.html"
+                                    title="HTML5提供了一些新的元素和属性">HTML5提供了一些新的元素和属性</a><br>
+                                <em>HTML5提供了一些新的元素和属性</em>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="cooperation_head" data-move-y="-40px">
+                    <h2>合作万千客户 只因好品质</h2>
+                    <span></span>
+                    <p>期待与您合作</p>
+                </div>
+
+
+                <div class="col-xs-4 col-md-3 col-mm-6 cooperation_img" data-move-y="50px">
+                    <a href="" target="_blank">
+                        <img src="photo/pics/20181109/1541748385.jpg"
+                            tppabs="http://demo.weboss.hk/h127/photo/pics/20181109/1541748385.jpg" class="img-thumbnail"
+                            alt="东方亮彩">
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-md-3 col-mm-6 cooperation_img" data-move-y="50px">
+                    <a href="" target="_blank">
+                        <img src="photo/pics/20181109/1541748366.jpg"
+                            tppabs="http://demo.weboss.hk/h127/photo/pics/20181109/1541748366.jpg" class="img-thumbnail"
+                            alt="比亚迪">
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-md-3 col-mm-6 cooperation_img" data-move-y="50px">
+                    <a href="" target="_blank">
+                        <img src="photo/pics/20181109/1541748307.jpg"
+                            tppabs="http://demo.weboss.hk/h127/photo/pics/20181109/1541748307.jpg" class="img-thumbnail"
+                            alt="顺林模型">
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-md-3 col-mm-6 cooperation_img" data-move-y="50px">
+                    <a href="" target="_blank">
+                        <img src="photo/pics/20181109/1541748280.jpg"
+                            tppabs="http://demo.weboss.hk/h127/photo/pics/20181109/1541748280.jpg" class="img-thumbnail"
+                            alt="华为">
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="Home/Tpl/default/Public/js/jquery.smoove.min.js"
+        tppabs="http://demo.weboss.hk/h127/Home/Tpl/default/Public/js/jquery.smoove.min.js"></script>
+    <script>$('.product_head,.product_img,.left_nav,.case_head,.case_img,.advantage_head,.advantage_right,.advantage_left,.news_head,.news_ul,.answer_ul,.about_head,.js_about_left,.js_about_right,.cooperation_head,.cooperation_img').smoove({ offset: '10%' });</script>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom mfoot_box">
+        <div class="mfoot_nav btn-group dropup">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                <span class="glyphicon glyphicon-share btn-lg" aria-hidden="true"></span>分享
+            </a>
+            <div class="dropdown-menu mfoot_share">
+                <div class="bdsharebuttonbox" style="display: inline-block; float:left;">
+                    <a href="#" class="bds_more" data-cmd="more"></a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                </div>
+            </div>
+        </div>
+        <div class="mfoot_nav">
+            <a href="tel:020-22043297">
+                <span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>手机
+            </a>
+        </div>
+        <div class="mfoot_nav" aria-hidden="true" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
+            <span class="glyphicon glyphicon-th-list btn-lg"></span>分类
+        </div>
+        <div class="mfoot_nav">
+            <a id="gototop" href="#">
+                <span class="glyphicon glyphicon-circle-arrow-up btn-lg" aria-hidden="true"></span>顶部
+            </a>
+        </div>
+    </nav>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <img class="footer_logo" src="advs/pics/20181109/1541748926.png"
+                        tppabs="http://demo.weboss.hk/h127/advs/pics/20181109/1541748926.png" alt="底部LOGO">
+                    <p class="footer_logo_text">
+                        <p>
+                            CopyRight 2013 All Right Reserved PHPWEB外贸网站&nbsp;ICP:08118166 <a
+                                href="javascript:if(confirm('http://demo.weboss.hk/sitemap.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://demo.weboss.hk/sitemap.html'"
+                                tppabs="http://demo.weboss.hk/sitemap.html" target="_blank">网站地图</a>
+                        </p>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 footer_contact">
+                    <p>
+                        联系人：吴先生
+                    </p>
+                    <p>
+                        手机：18926129998
+                    </p>
+                    <p>
+                        电话：020-22043297
+                    </p>
+                    <p>
+                        邮箱：510551@qq.com
+                    </p>
+                    <p>
+                        地址： 广东省广州市天河区天平架沙太路沙太路
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="col-xs-4 col-md-4 footer_menu">
+                        <p class="footer_menu_first"><a target="_blank" href="product/class/index.htm"
+                                tppabs="http://demo.weboss.hk/h127/product/class/">产品中心</a></p>
+
+
+                        <p><a href="product/class/-115.html" tppabs="http://demo.weboss.hk/h127/product/class/?115.html"
+                                target="_self">产品分类一</a></p>
+
+                        <p><a href="product/class/-74.html" tppabs="http://demo.weboss.hk/h127/product/class/?74.html"
+                                target="_self">产品分类二</a></p>
+
+                        <p><a href="product/class/-124.html" tppabs="http://demo.weboss.hk/h127/product/class/?124.html"
+                                target="_self">产品分类三</a></p>
+
+
+                    </div>
+                    <div class="col-xs-4 col-md-4 footer_menu">
+                        <p class="footer_menu_first"><a target="_blank" href="news/class/index.htm"
+                                tppabs="http://demo.weboss.hk/h127/news/class/">新闻中心</a></p>
+
+
+                        <p><a href="news/class/-86.html" tppabs="http://demo.weboss.hk/h127/news/class/?86.html"
+                                target="_self">公司新闻</a></p>
+
+                        <p><a href="news/class/-99.html" tppabs="http://demo.weboss.hk/h127/news/class/?99.html"
+                                target="_self">行业新闻</a></p>
+
+                        <p><a href="news/class/-106.html" tppabs="http://demo.weboss.hk/h127/news/class/?106.html"
+                                target="_self">常见问题</a></p>
+
+
+                    </div>
+                    <div class="col-xs-4 col-md-4 footer_menu">
+                        <p class="footer_menu_first"><a target="_blank" href="page/html/about.php.htm"
+                                tppabs="http://demo.weboss.hk/h127/page/html/about.php">关于我们</a></p>
+
+
+                        <p><a href="page/html/about.php.htm" tppabs="http://demo.weboss.hk/h127/page/html/about.php"
+                                target="_self">公司简介</a></p>
+
+                        <p><a href="page/html/contact.php.htm" tppabs="http://demo.weboss.hk/h127/page/html/contact.php"
+                                target="_self">联系我们</a></p>
+
+                        <p><a href="page/html/feedback.php.htm"
+                                tppabs="http://demo.weboss.hk/h127/page/html/feedback.php" target="_self">留言反馈</a></p>
+
+                        <p><a href="page/html/services.php.htm"
+                                tppabs="http://demo.weboss.hk/h127/page/html/services.php" target="_self">我们的服务</a></p>
+
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                    <img class="footer_qrcode" src="advs/pics/20180423/1524472467.jpg"
+                        tppabs="http://demo.weboss.hk/h127/advs/pics/20180423/1524472467.jpg" alt="二维码图片">
+                    <p class="footer_qrcode_text">手机二维码</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--客服面板-->
+    <link rel="stylesheet" type="text/css" href="Public/css/online.css"
+        tppabs="http://demo.weboss.hk/h127/Public/css/online.css" />
+    <div id="cmsFloatPanel">
+        <div class="ctrolPanel">
+            <a class="service" href="#"></a>
+            <a class="message" href="#"></a>
+            <a class="qrcode" href="#"></a>
+            <a class="arrow" title="返回顶部" href="#"></a>
+        </div>
+        <div class="servicePanel">
+            <div class="servicePanel-inner">
+                <div class="serviceMsgPanel">
+                    <div class="serviceMsgPanel-hd"><a href="#"><span>关闭</span></a></div>
+                    <div class="serviceMsgPanel-bd">
+                        <!--在线QQ-->
+                        <!--在线QQ-->
+                        <!--在线MSN-->
+                        <div class="msggroup">
+                            <a href="msnim:chat?contact=xxxxxxxxxxx@hotmail.com" target="blank"><img class="qqimg"
+                                    src="Public/images/msn.jpg"
+                                    tppabs="http://demo.weboss.hk/h127/Public/images/msn.jpg" alt="MSN在线客服" />weboss</a>
+                        </div>
+                        <div class="msggroup">
+                            <a href="msnim:chat?contact=xxxxxxxxxxx@hotmail.com" target="blank"><img class="qqimg"
+                                    src="Public/images/msn.jpg"
+                                    tppabs="http://demo.weboss.hk/h127/Public/images/msn.jpg"
+                                    alt="MSN在线客服" />weboss2</a>
+                        </div>
+                        <!--在线SKYPE-->
+                        <div class="msggroup">
+                            <a href="skype:510551@qq.com?chat"><img class="qqimg" src="Public/images/skype.gif"
+                                    tppabs="http://demo.weboss.hk/h127/Public/images/skype.gif"
+                                    alt="SKYPE在线客服" />wingjslm</a>
+                        </div>
+                        <div class="msggroup">
+                            <a href="skype:510551@qq.com?chat"><img class="qqimg" src="Public/images/skype.gif"
+                                    tppabs="http://demo.weboss.hk/h127/Public/images/skype.gif"
+                                    alt="SKYPE在线客服" />wingjslm</a>
+                        </div>
+                        <!--淘宝旺旺-->
+                        <!--旺旺国内版-->
+                        <div class="msggroup">
+                            <a target="_blank"
+                                href="javascript:if(confirm('http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=cnalichn&s=10&charset=UTF-8  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=cnalichn&s=10&charset=UTF-8'"
+                                tppabs="http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=cnalichn&s=10&charset=UTF-8"><img
+                                    src="../../wwimgsrc.cn-hangzhou.oss-pub.aliyun-inc.com/htdocs/im/actions/wbtx/alitalk/10/online.gif"
+                                    tppabs="http://amos.alicdn.com/online.aw?v=2&uid=wingjslm&site=cnalichn&s=10&charset=UTF-8"
+                                    alt="点击联系我" /></a>
+                        </div>
+                        <!--旺旺国际版-->
+                        <div class="msggroup">
+                            <a class="alitalk-link" target="_blank"
+                                href="javascript:if(confirm('http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=enaliint&s=22&charset=UTF-8  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=enaliint&s=22&charset=UTF-8'"
+                                tppabs="http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=enaliint&s=22&charset=UTF-8"><img
+                                    class="qqimg"
+                                    src="../../wwimgsrc.cn-hangzhou.oss-pub.aliyun-inc.com/htdocs/im/actions/wbtx/alitalk/22/offline.gif"
+                                    tppabs="http://amos.alicdn.com/online.aw?v=2&uid=wingjslm&site=enaliint&s=22&charset=UTF-8"
+                                    alt="点击联系我" />weboss</a>
+                        </div>
+                        <div class="msggroup">
+                            <a class="alitalk-link" target="_blank"
+                                href="javascript:if(confirm('http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=enaliint&s=22&charset=UTF-8  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=enaliint&s=22&charset=UTF-8'"
+                                tppabs="http://amos.alicdn.com/msg.aw?v=2&uid=wingjslm&site=enaliint&s=22&charset=UTF-8"><img
+                                    class="qqimg"
+                                    src="../../wwimgsrc.cn-hangzhou.oss-pub.aliyun-inc.com/htdocs/im/actions/wbtx/alitalk/22/offline.gif"
+                                    tppabs="http://amos.alicdn.com/online.aw?v=2&uid=wingjslm&site=enaliint&s=22&charset=UTF-8"
+                                    alt="点击联系我" />weboss2</a>
+                        </div>
+                    </div>
+                    <div class="serviceMsgPanel-ft"></div>
+                </div>
+                <div class="arrowPanel">
+                    <div class="arrow02"></div>
+                </div>
+            </div>
+        </div>
+        <div class="messagePanel">
+            <div class="messagePanel-inner">
+                <div class="formPanel">
+
+                    <div class="formPanel-bd">
+                        <div class="bdsharebuttonbox" style="display: inline-block; float:left;"><a href="#"
+                                class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"
+                                title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina"
+                                title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a
+                                href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#"
+                                class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                        <a type="button" class="btn btn-default btn-xs" href="#"
+                            style="margin: 12px 0px 0px 10px;">关闭</a>
+                    </div>
+
+                </div>
+                <div class="arrowPanel">
+                    <div class="arrow01"></div>
+                    <div class="arrow02"></div>
+                </div>
+            </div>
+        </div>
+        <div class="qrcodePanel">
+            <div class="qrcodePanel-inner">
+                <div class="codePanel">
+                    <div class="codePanel-hd"><span style="float:left">用手机扫描二维码</span><a href="#"><span>关闭</span></a>
+                    </div>
+                    <div class="codePanel-bd">
+                        <img src="advs/pics/20180423/1524472467.jpg"
+                            tppabs="http://demo.weboss.hk/h127/advs/pics/20180423/1524472467.jpg" alt="二维码" />
+                    </div>
+                </div>
+                <div class="arrowPanel">
+                    <div class="arrow01"></div>
+                    <div class="arrow02"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="Public/js/online.js"
+        tppabs="http://demo.weboss.hk/h127/Public/js/online.js"></script>
+
+    <div class="link_box">
+        <div class="container">
+            <span class="link_title">友情链接</span><button id="link_btn" class="glyphicon glyphicon-plus"
+                aria-hidden="true"></button>
+            <span class="link_list">
+
+                <a href="javascript:if(confirm('http://www.weboss.hk/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.weboss.hk/'"
+                    tppabs="http://www.weboss.hk/" target="_self">Weboss</a>
+
+                <a href="javascript:if(confirm('http://www.tonv.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.tonv.cn/'"
+                    tppabs="http://www.tonv.cn/" target="_self">Tonv</a>
+
+                <a href="javascript:if(confirm('http://www.100cm.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.100cm.cn/'"
+                    tppabs="http://www.100cm.cn/" target="_self">phpweb</a>
+
+
+            </span>
+        </div>
+    </div>
+    <!--div class="tags_box">
+      <div class="container">
+            <span class="tags_title">
+                  <a href="/P01/tags/index.html" role="button">全部标签</a>
+            </span>
+            <button id="tags_btn" class="glyphicon glyphicon-plus" aria-hidden="true"></button>
+            <span class="tags_rows">
+                  <a href=" /P01/product_tags_17.html" role="button"  target="_blank">记录仪</a><a href="/P01/new_tags_18.html" role="button"  target="_blank">油价</a><a href="/P01/download_tags_20.html" role="button"  target="_blank">蓝科</a><a href="/P01/photo_tags_21.html" role="button"  target="_blank">员工</a>            </span>
+      </div>
+</div-->
+</body>
+
+</html>
